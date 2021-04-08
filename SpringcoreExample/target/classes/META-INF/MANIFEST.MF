@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Built-By: trbor
+Build-Jdk: 15.0.2
+Class-Path: lib/commons-logging-1.1.1.jar lib/spring-core-5.3.3.jar lib/
+ spring-jcl-5.3.3.jar lib/spring-beans-5.3.3.jar lib/spring-context-5.3.
+ 3.jar lib/spring-aop-5.3.3.jar lib/spring-expression-5.3.3.jar lib/mave
+ n-jar-plugin-3.0.2.jar lib/maven-plugin-api-3.0.jar lib/maven-model-3.0
+ .jar lib/sisu-inject-plexus-1.4.2.jar lib/sisu-inject-bean-1.4.2.jar li
+ b/sisu-guice-2.1.7-noaop.jar lib/maven-core-3.0.jar lib/maven-settings-
+ 3.0.jar lib/maven-settings-builder-3.0.jar lib/maven-repository-metadat
+ a-3.0.jar lib/maven-model-builder-3.0.jar lib/maven-aether-provider-3.0
+ .jar lib/aether-impl-1.7.jar lib/aether-spi-1.7.jar lib/aether-api-1.7.
+ jar lib/aether-util-1.7.jar lib/plexus-interpolation-1.14.jar lib/plexu
+ s-classworlds-2.2.3.jar lib/plexus-component-annotations-1.5.5.jar lib/
+ plexus-sec-dispatcher-1.3.jar lib/plexus-cipher-1.4.jar lib/maven-artif
+ act-3.0.jar lib/maven-archiver-3.1.1.jar lib/maven-shared-utils-3.0.1.j
+ ar lib/commons-io-2.5.jar lib/plexus-archiver-3.4.jar lib/plexus-io-2.7
+ .1.jar lib/commons-compress-1.11.jar lib/snappy-0.4.jar lib/xz-1.5.jar 
+ lib/plexus-utils-3.0.24.jar
+Main-Class: com.aep.java.MainClass
+Created-By: Maven Integration for Eclipse
+

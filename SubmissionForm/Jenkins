@@ -1,0 +1,15 @@
+node('master'){
+    
+        stage('checkout'){
+          
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '5d29df77-b0d7-4864-b7d4-176f6b151032', url: 'https://github.com/BorraVisalakshi/Java.git']]])
+            
+        }
+        stage('build'){
+            bat 'mvn -f C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/Pipeline_Git_File/SubmissionForm/pom.xml clean install'
+        }
+        
+        stage('deploy to Tomcat'){
+            deploy adapters: [tomcat9(credentialsId: '1cb7155d-8f32-46e0-a051-d4d8655d8e61', path: '', url: 'http://localhost:8080/')], contextPath: 'SubmissionForm_Pipeline_File', war: '**/*.war'
+        }
+}
