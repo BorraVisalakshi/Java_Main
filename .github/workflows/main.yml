@@ -29,7 +29,7 @@ jobs:
 
       # Runs a set of commands to package the jar
       - name: Step-3 Have GitHub actions Maven Build
-        run: mvn -B package --file pom.xml
+        run: mvn -B package pom.xml
         
      # Runs a set of commands to check the directory
       - name: Step-4 List the current directory
