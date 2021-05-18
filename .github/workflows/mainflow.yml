@@ -1,0 +1,21 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Java CI for Main Repo
+
+on:
+  push:
+    branches: [ master ]
+ 
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Repository-Dispatch Event calling a sub workflow
+      uses: peter-evans/repository-dispatch@v1
+      with:
+          token: ${{ secrets.PAT }}
+          repository: BorraVisalakshi/Workflow_calling
+          event-type: dataform
