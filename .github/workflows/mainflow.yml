@@ -17,5 +17,5 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
           token: ${{ secrets.PAT }}
-          repository: BorraVisalakshi/Workflow_calling
+          repository: BorraVisalakshi/Java_Main/DataRestForm/
           event-type: dataform
