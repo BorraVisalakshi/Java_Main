@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    #Repo event
     - name: Repository-Dispatch Event calling a sub workflow
       uses: peter-evans/repository-dispatch@v1
       with:
           token: ${{ secrets.PAT }}
-          repository: BorraVisalakshi/Java_Main/DataRestForm/
+          repository: BorraVisalakshi/Java_Main/DataRestForm
           event-type: dataform
