@@ -27,9 +27,11 @@ jobs:
             mvn clean install;
             
     - name: Zip code
-      uses: papeloto/action-zip@v1
+      uses: thedoctor0/zip-release@master
       with:
-       dest: HelloWorld/Hello.zip
+       type: 'zip'
+       path: /HelloWorld/
+       filename: 'HelloWorld.zip'
        
        
     - name: Check dir
