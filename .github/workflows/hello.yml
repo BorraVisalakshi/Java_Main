@@ -29,8 +29,7 @@ jobs:
     - name: Zip code
       uses: papeloto/action-zip@v1
       with:
-       files: HelloWorld
-       dest: Hello.zip
+       dest: HelloWorld/Hello.zip
        
        
     - name: Check dir
