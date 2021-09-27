@@ -83,7 +83,7 @@
 					<action>deploy</action>
 					<remote>false</remote>
 					<verbose>true</verbose>
-					<source>D:/SpringHelloWorld/HelloWorld/target/HelloWorld.war</source>
+					<source>C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\POC_Pipeline\HelloWorld\target\HelloWorld.war</source>
 					<name>SpringApp</name>
 				</configuration>
 				<!-- <executions> <execution> <phase>install</phase> <goals> <goal>deploy</goal> 
