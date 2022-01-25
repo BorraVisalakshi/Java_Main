@@ -12,12 +12,7 @@ jobs:
 
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v2
+    
    
-       
-    - name: Step-4 Zip the Source code
-      uses: vimtor/action-zip@v1
-      with:
-       files: HelloWorld,DataRestForm
-       dest: WebApp.zip
-       
+    - run: echo "Hello Vishali :) <3"  
+   
